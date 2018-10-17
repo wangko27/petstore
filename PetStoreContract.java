@@ -53,8 +53,14 @@ public class PetStoreContract implements Contract {
     }
 
     @View
-    public Boolean has() {
-        return true;
+    public Boolean testConstructor() {
+        /**
+         * 构造函数测试
+         */
+        BigDecimal _int = new BigDecimal(19);
+        BigDecimal _double = new BigDecimal(4.56);
+        BigDecimal _long = new BigDecimal(5634345L);
+        BigDecimal _String = new BigDecimal("1000022");
     }
 
     @View
