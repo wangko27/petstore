@@ -10,6 +10,15 @@ public class Pet {
     private String name;
     private BigDecimal price;
 
+    public Pet() {
+
+    }
+
+    public Pet(String name, BigDecimal price) {
+        this.name = name;
+        this.price = price;
+    }
+
     public String getName() {
         return name;
     }
@@ -24,5 +33,13 @@ public class Pet {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
